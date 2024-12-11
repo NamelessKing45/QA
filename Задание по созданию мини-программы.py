@@ -21,6 +21,7 @@ try:
         elif sign == normal_sign[3]:print(f'{value2} {sign} {value1} =',value1 - value2)
     else:print("Введены некорректные данные")
 except ValueError:print("Введены некорректные данные")
+except ZeroDivisionError:print("Делить на ноль нельзя!")
 
 
 
