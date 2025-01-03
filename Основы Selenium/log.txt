@@ -1,9 +1,0 @@
-Enter to site is success
-Add elements to bin IS COOL
-Enter to site(RECYCLE BIN) is success
-Remove elements to bin IS COOL
-Enter to site(YOUR INFORMATION STEP ONE) is success
-Enter to site(YOUR INFORMATION STEP TWO) is success
-Enter to site(FINAL TABS) is success
-Text to site(FINAL TABS) is success
-Out to site is success
