@@ -21,8 +21,18 @@ def to_site():
     driver.find_element(By.XPATH, '//*[@id="app"]/div/div/div[2]/div/div[1]/div/div[1]').click()
     driver.find_element(By.XPATH, '//*[@id="item-1"]/span').click()
     driver.find_element(By.XPATH, '//*[@id="item-2"]').click()
-    assert driver.current_url == "https://demoqa.com/checkbox", write_log_file('to site IS FALSE\n')
+    assert driver.current_url == "https://demoqa.com/radio-button", write_log_file('to site IS FALSE\n')
     write_log_file('to site IS COOL\n')
 
 
-to_site()
+def click_radio_button_and_it_inti_n():
+    radio_button = driver.find_element(By.XPATH, '//div[2]/label[@class="custom-control-label"]')
+    radio_button.click()
+    if radio_button.is_selected():write_log_file('Radio button IS ON\n')
+    else:write_log_file('Radio button IS OFF\n')
+
+def sc_to_site_click_r_button_inti_n():
+    to_site()
+    click_radio_button_and_it_inti_n()\
+
+sc_to_site_click_r_button_inti_n()

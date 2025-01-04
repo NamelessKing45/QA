@@ -1,1 +1,2 @@
-to site IS FALSE
+to site IS COOL
+Radio button IS OFF
